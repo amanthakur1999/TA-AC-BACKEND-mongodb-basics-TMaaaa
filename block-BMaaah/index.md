@@ -24,7 +24,7 @@ Write code to execute below expressions.
 {
   _id: 'some_random_id',
   title: 'html',
-  details: '',
+  details: 'aman',
   author: {
     name: 'Aman thakur',
     email: 'uttamthakur2999@gmail.com',
@@ -45,8 +45,9 @@ Write code to execute below expressions.
 8. Find document using a specific tag.
    //db.articles.find({author : {$all : ['js','html']}})
 9. Update title of a document using its \_id field.
+   //db.article.update({},{$rename:{details:"description"}},{multi:true})
 10. Update a author's name using article's title.
-    //
+    //db.article.find({"title": 'html'},{$set:{"author.name":"aman2"}})
 11. rename details field to description from all articles in articles collection.
 12. Add additional tag in a specific document.
 
