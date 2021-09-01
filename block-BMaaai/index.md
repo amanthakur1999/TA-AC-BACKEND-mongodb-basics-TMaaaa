@@ -17,7 +17,19 @@ host, username and password are optional fields.
 - --file: file location
 - --jsonArray: Passed an array of json objects
 
+```js
+use amandatabase
+db
+db.createCollection("user1");
+show collections
+db.user1.insertMany([{"name" : "aman", "age" : 35 , "phone" : 12345678}])
+db.user1.insertMany({"name" : "aman thakur", "age" : 22 , "phone" : 1232345678})
+
+
+```
+
 ## BLOCK-writeCode
+
 
 Go to `https://www.json-generator.com/`
 
